@@ -43,20 +43,23 @@ function Dashboard3() {
             <div>&nbsp;</div>
             <div className="col-md-12">
               <div className="row">
-                <div className="col-md-6 mt-4">
+                <div className="col-md-5 mt-4">
                   <div className="inner-box-left" style={{ backgroundColor: '#FFEECD', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px', padding: '10px 20px 20px 20px', alignContent: 'middle' }}>
                     <h2 className="text-center"><b>Customer Details</b></h2>
-                    <span><b>Name : </b>John</span><br />
-                    <span><b>House No : </b>05</span><br />
-                    <span><b>Road Name : </b>123, HN</span><br />
-                    <span><b>City/Town : </b>London</span><br />
-                    <span><b>Country : </b>Berkshires</span><br />
-                    <span><b>Postcode : </b>SW111WW</span><br />
-                    <span><b>Email : </b>zys@gmail.com</span><br />
-                    <span><b>Phone No : </b>73243876827</span><br />
+                    <br/>
+                    <br/>
+                    <span><b>Name : </b>John</span><br/>
+                    <span><b>House No : </b>05</span><br/>
+                    <span><b>Road Name : </b>123, HN</span><br/>
+                    <span><b>City/Town : </b>London</span><br/>
+                    <span><b>Country : </b>Berkshires</span><br/>
+                    <span><b>Postcode : </b>SW111WW</span><br/>
+                    <span><b>Email : </b>zys@gmail.com</span><br/>
+                    <span><b>Phone No : </b>73243876827</span><br/>
+                    <br/><br/>
                   </div>
                 </div>
-                <div className="col-md-6 mt-4">
+                <div className="col-md-7 mt-4">
                   <div className="box1" style={{ backgroundColor: '#FFEECD', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px', padding: '10px 20px 20px 20px', alignContent: 'middle' }}>
                     <h2 className="text-center"><b>Order Details</b></h2>
                     <span><b>Order Id : </b>2124</span><br />

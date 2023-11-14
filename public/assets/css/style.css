@@ -214,7 +214,18 @@ input[type=password] {
 .specx-btn{
 	padding: 5px 18px;border: 0px;border-radius: 15px;border:1px solid rgba(249, 107, 7, 1);font-size: 11px;
 }
+.specx-btn-iphone{
+	padding: 5px 15px;
+	width: 100%;
+	border: 0px;
+	border-radius: 7px;
+	border:1px solid rgba(249, 107, 7, 1);
+	font-size: 11px;
+	text-align: center;
+	background-color: rgba(0, 142, 214, 0.17);
+}
 .banner-content-o .form-inner .form-controls{
+	/* box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.25); */
 	border-color:0px;
 	border: 0px !important;
     color: #353535;
@@ -223,15 +234,44 @@ input[type=password] {
     /* padding: 6px 30px; */
 	padding: 6px 15px;
 	border-radius: 22px;
-	background: #FFEECD;
+	background: inherit;
+	outline: none;
+
+}
+.banner-content-o .form-inner .form-controls-t{
+	/* box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.25); */
+	border-color:0px;
+	border: 0px !important;
+    color: #353535;
+    font-size: 15px;
+    /* min-height: 26px !important; */
+    /* padding: 6px 30px; */
+	padding: 6px 20px;
+	border-radius: 22px;
+	background: inherit;
+	outline: none;
+
+}
+.banner-content-o .form-inner .form-controls-tmaster{
+	/* box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.25); */
+	border-color:0px;
+	border: 0px !important;
+    color: #353535;
+    font-size: 15px;
+    /* min-height: 26px !important; */
+    /* padding: 6px 30px; */
+	padding: 6px 19px;
+	border-radius: 22px;
+	background: inherit;
+	outline: none;
 
 }
 .banner-content-o .form-inner {
     border-radius: 130px;
     width: 100%;
-    box-shadow: 0px 4px 4px rgba(207, 207, 207, 0.25);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     /* box-shadow: 1px 4px 12px 0px #00000040; */
-	background: #FFEECD;
+	/* background: #FFEECD; */
     /* border-radius: 40px; */
     border: 0;
     /* height: 50px; */
@@ -248,30 +288,60 @@ input[type=password] {
     margin: 4px;
     font-size: 16px;
     line-height: 18px;
-    padding: 10px 30px;
+    padding: 6px 2px;
     text-transform: capitalize;
     color: #fff;
-    min-width: 90px;
+    min-width: 100px;
 }
 
 /* //mobile view */
-.banner-content-m .form-inner .form-controls{
+.banner-content-m .form-inner .form-controls-mobile{
+		/* box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.25); */
+		border-color:0px;
+		border: 0px !important;
+		color: #353535;
+		font-size: 15px;
+		/* min-height: 26px !important; */
+		/* padding: 6px 30px; */
+		padding: 6px 5px;
+		border-radius: 22px;
+		background: inherit;
+		outline: none;
+
+}
+.banner-content-m .form-inner .form-controls-mobiles{
+	/* box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.25); */
 	border-color:0px;
 	border: 0px !important;
-    color: #353535;
-    font-size: 15px;
-    /* min-height: 26px !important; */
-    /* padding: 6px 30px; */
-	/* padding: 6px 15px; */
+	color: #353535;
+	font-size: 15px;
+	/* min-height: 26px !important; */
+	/* padding: 6px 30px; */
+	padding: 6px 17px;
 	border-radius: 22px;
-	background: #FFEECD;
+	background: inherit;
+	outline: none;
+
+}
+.banner-content-m .form-inner .form-controls-master{
+	/* box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.25); */
+	border-color:0px;
+	border: 0px !important;
+	color: #353535;
+	font-size: 15px;
+	/* min-height: 26px !important; */
+	/* padding: 6px 30px; */
+	padding: 6px 15px;
+	border-radius: 22px;
+	background: inherit;
+	outline: none;
 
 }
 .banner-content-m .form-inner {
     border-radius: 130px;
     width: 100%;
     box-shadow: 0px 4px 4px rgba(207, 207, 207, 0.25);
-	background: #FFEECD;
+	background: inherit;
     /* border-radius: 40px; */
     border: 0;
     /* height: 50px; */
@@ -280,7 +350,7 @@ input[type=password] {
     font-weight: 500;
 }
 .banner-content-m .sub-btn {
-    background: #008ED6;
+ background: #008ED6;
     border-radius: 50px !important;
     font-weight: bold;
     border: 1px solid #008ED6;
@@ -288,10 +358,10 @@ input[type=password] {
     margin: 4px;
     font-size: 16px;
     line-height: 18px;
-    /* padding: 10px 30px; */
+    padding: 6px 2px;
     text-transform: capitalize;
     color: #fff;
-    /* min-width: 90px; */
+    min-width: 100px;
 }
 
 .nav-link {
@@ -320,6 +390,9 @@ input[type=password] {
     -ms-flex-align: stretch;
     align-items: stretch;
     width: 100%;
+	box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.25);
+	border-radius: 22px;
+	border: 1px solid #eee;
 }
 .dashboard-page .content > .container-fluid {
 	padding-left: 30px;
@@ -2500,6 +2573,10 @@ html.menu-opened body header:before {
 }
 .browse-btn{
 	text-align: right;font-size: 11px;width: 70%;margin-top: 6px;
+	text-decoration: underline;
+}
+.browse-btns{
+	text-decoration: underline;
 }
 .play-btn{
 	text-align: right;font-size: 11px;width: 90%;margin-top: 6px;
@@ -2722,12 +2799,22 @@ p.inner_p{
 	border-left:5px solid #F96B07;
 }
 .spec-btn{
-	border: 0px solid #F96B07;
+	border: 1px solid rgba(249, 107, 7, 1);
 	padding: 5px 7px;
-	background-color: rgb(242, 141, 66, 0.4);
+	background-color: inherit;
 	border-radius: 13px;
 	font-size: 11px;
 	font-weight: bold;
+	margin: 0px 3px;
+}
+.spec-btn-tabs{
+	border: 0px solid rgba(249, 107, 7, 1);
+	padding: 5px 10px;
+	background-color: rgba(250, 205, 164, 1);
+	border-radius: 13px;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0px 3px;
 }
 .brand-item {
     position: relative;
@@ -14182,10 +14269,13 @@ ul {
     top: 75px;
 }
 .footer-top {
-    padding: 60px 0;
+    /* padding: 0px 0; */
 }
 .footer .footer-widget .footer-about-content p {
     color: #E5E5E5;
+}
+.browse-btnx{
+	text-decoration: underline;
 }
 .footer-contact p {
 	color: #E5E5E5;
@@ -18423,7 +18513,7 @@ button.scroll-top:focus{
 		margin-bottom: 40px;
 	}
 	.footer-top {
-		padding: 60px 0 0 0;
+		padding-top: 20px;
 	}	
 	.footer-widget {
 		margin-bottom: 25px;
@@ -19080,7 +19170,7 @@ button.scroll-top:focus{
 		font-size: 16px;
 	}
 	.footer-top {
-		padding: 50px 0 40px 0;
+		/* padding: 50px 0 40px 0; */
 	}
 	.footer-user {
 		top: 0;
@@ -20245,8 +20335,8 @@ button.scroll-top:focus{
 		width: 100%;
 	}
 	.footer-top {
-		padding: 50px 0 7px 0;
-		margin-top: 20px;
+		/* padding: 50px 0 7px 0; */
+		/* margin-top: 20px; */
 	}
 	.position-title h3, .quick-title h3  {
 		margin-bottom: 10px !important;

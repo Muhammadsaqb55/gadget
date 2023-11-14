@@ -13,14 +13,14 @@ function Devices() {
           <div className="container">
             <div className="col-md-12">
               <div className="row">
-                <div className="col-md-4 mt-4">
+                <div className="col-md-3 mt-4">
                   <div className="search-right banner-content-o desktop-view">
                     <form className="form" name="store" id="store" method="post" action="#">
                       <div className="form-inner">
                         <div className="input-group">
                           <input type="email" className="form-controls" placeholder="Browse Other Devices" />
                           <button className="btn btn-primary sub-btn" type="submit">
-                            Search &nbsp; &nbsp; &nbsp;<span><img src="assets/images/search.png" alt="" /></span>
+                          &nbsp;Search &nbsp; <span><img src="assets/images/search.png" alt="" /></span>
                           </button>
                         </div>
                       </div>
@@ -39,44 +39,44 @@ function Devices() {
                     </form>
                   </div>
                   <div className="browse-btnx" style={{ borderRadius: '20px !important', textAlign: 'right', fontSize: '11px' }}>
-                    <a href="#">&nbsp; &nbsp;  Browse Other Brands</a>
+                    <a href="#">Browse Other Brands</a>
                   </div>
-                  <div className="inner-left" style={{ backgroundColor: '#FFEECD', borderRadius: '30px', padding: '40px' }}>
+                  <div className="inner-left" style={{ backgroundColor: '#FFEECD', borderRadius: '30px', padding: '20px' }}>
                     <h4 className="text-center">Apple iPhone 14 Pro Max </h4>
-                    <div className="compare-itemx freelance-count aos mx-auto" style={{ textAlign: 'center', paddingLeft: '30px', paddingRight: '30px', background: 'none !important' }}>
+                    <div className="compare-itemx freelance-count aos mx-auto" style={{ textAlign: 'center',background: 'none !important' }}>
                       <div className="feature-icon" style={{ backgroundColor: '#008ED6', borderRadius: '10px 10px 0px 0px' }}>
                         <img src="assets/images/iphone.png" className="img-fluid" alt="" />
                       </div>
-                      <div style={{ backgroundColor: '#fff', height: 'auto !important' }}>
+                      <div className='pt-3' style={{ backgroundColor: '#fff', height: 'auto !important', borderRadius: '0px 0px 30px 30px' }}>
                         <div className="row">
                           <div className="col-md-6">
                             <h6><b>Condition</b></h6>
-                            <div className="m-2"><a href="" className="p-2"><button className="specx-btn">Good</button></a></div>
-                            <div className="m-2"><a href="" className="p-2"><button className="specx-btn">Poor</button></a></div>
-                            <div className="m-2"><a href="" className="p-2"><button className="specx-btn">Broken</button></a></div>
-                            <div className="m-2"><a href="" className="p-2"><button className="specx-btn">New</button></a></div>
+                            <div className="m-2"><a href="" className=""><button className="specx-btn-iphone">Good</button></a></div>
+                            <div className="m-2"><a href="" className=""><button className="specx-btn-iphone">Poor</button></a></div>
+                            <div className="m-2"><a href="" className=""><button className="specx-btn-iphone">Broken</button></a></div>
+                            <div className="m-2"><a href="" className=""><button className="specx-btn-iphone">New</button></a></div>
                           </div>
                           <div className="col-md-6">
                             <h6><b>Capacity</b></h6>
-                            <div className="m-2"><a href="" className="p-2"><button className="specx-btn">64GB</button></a></div>
-                            <div className="m-2"><a href="" className="p-2"><button className="specx-btn">128GB</button></a></div>
-                            <div className="m-2"><a href="" className="p-2"><button className="specx-btn">256GB</button></a></div>
-                            <div className="m-2"><a href="" className="p-2"><button className="specx-btn">512GB</button></a></div>
+                            <div className="m-2"><a href="" className=""><button className="specx-btn-iphone">64GB</button></a></div>
+                            <div className="m-2"><a href="" className=""><button className="specx-btn-iphone">128GB</button></a></div>
+                            <div className="m-2"><a href="" className=""><button className="specx-btn-iphone">256GB</button></a></div>
+                            <div className="m-2"><a href="" className=""><button className="specx-btn-iphone">512GB</button></a></div>
                           </div>
                         </div>
                         <div className="selector-div">
                           <div className="form-group">
                             <label className=""><b>Network</b></label><br />
-                            <select name="" id="" style={{ padding: '5px 40px', borderRadius: '15px', border: '1px solid rgba(249, 107, 7, 1)' }}>
+                            <select name="" id="" style={{ padding: '5px 40px', borderRadius: '15px', border: '1px solid rgba(249, 107, 7, 1)', background: 'rgba(0, 142, 214, 0.17)', outline: 'none' }}>
                               <option value="">Unlocked</option>
                               <option value="">1</option>
                               <option value="">1</option>
                             </select>
                           </div>
                         </div>
-                        <p className="inner_p" style={{ textAlign: 'left !important' }}>
+                        <p className="inner_p p-1" style={{ textAlign: 'left !important'}}>
                           <h6><b>What counts as good?</b></h6>
-                          <span className="text-muted" style={{ fontSize: '12px' }}>To receive the full quoted price your device<br />
+                          <span className="text-muted" style={{ fontSize: '14px',paddingBottom: '10px'  }}>To receive the full quoted price your device<br />
                             must power on, show only minor signs of<br />
                             use, and have both fully functional <br />
                             hardware and software. Check the <br />
@@ -86,7 +86,7 @@ function Devices() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-8 mt-4">
+                <div className="col-md-9 mt-4">
                   <div className="col-md-12 col-sm-12 col-12">
                   <div className="inner-data" style={{ backgroundColor: '#FFEECD', paddingLeft: '50px', paddingRight: '50px', borderRadius: '10px', padding: '0px 20px 20px 20px', alignContent: 'middle' }}>
                     <div className="mb-2" style={{ backgroundImage: 'url(assets/images/bg-blue.png)', backgroundRepeat: 'no-repeat', width: '100%', height: '60px' }}>
@@ -239,7 +239,7 @@ function Devices() {
           </div>
         </section>
 
-        <section className="outer-section mt-4">
+        <section className="container outer-section mt-4">
       <div className="container" style={{ backgroundColor: '#FFEECD', borderRadius: '30px' }}>
         <section className="section compare">
           <div className="container">
@@ -320,8 +320,8 @@ function Devices() {
         </section>
       </div>
     </section>
-
-    <section className="outer-section">
+    <div>&nbsp;</div>
+    <section className="container outer-section">
         <div className="container" style={{ backgroundColor: '#FFEECD', borderRadius: '30px' }}>
           <section className="section">
             <div className="container">
@@ -388,9 +388,9 @@ function Devices() {
           </section>
         </div>
       </section>
+<div className='desktop-view'>&nbsp;</div>
 
-
-      <section className="outer-section footer-top aos">
+      <section className="container outer-section footer-top aos">
       <div className="container" style={{ backgroundColor: '#008ED6', borderRadius: '30px' }}>
         <footer className="footer">
           <div className="row">

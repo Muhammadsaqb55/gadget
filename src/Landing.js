@@ -23,9 +23,8 @@ function Landing() {
           </div>
           </div>
           </form>
-         <div>&nbsp;</div>
           <div className="browse-btn">
-          <a href="#">Browse Other Brands</a>
+          <a href="#" style={{ textDecoration:'underline' }}>Browse Other Brands</a>
           </div>
           <div className="play-btn">
           <img src="/assets/images/play-btn.png" alt=""/>
@@ -427,7 +426,7 @@ function Landing() {
                     <h6 className="text-center"><b>Tablets</b></h6>
                     <p className="inner_p">
                       <span>
-                        <a href="#"><button className="spec-btn">View</button></a>
+                        <a href="#"><button className="spec-btn-tabs">View</button></a>
                       </span>
                     </p>
                   </div>
@@ -443,7 +442,7 @@ function Landing() {
                     <h6 className="text-center"><b>Watches</b></h6>
                     <p className="inner_p">
                       <span>
-                        <a href="#"><button className="spec-btn">View</button></a>
+                        <a href="#"><button className="spec-btn-tabs">View</button></a>
                       </span>
                     </p>
                   </div>
@@ -459,7 +458,7 @@ function Landing() {
                     <h6 className="text-center"><b>Gaming Consoles</b></h6>
                     <p className="inner_p">
                       <span>
-                        <a href="#"><button className="spec-btn">View</button></a>
+                        <a href="#"><button className="spec-btn-tabs">View</button></a>
                       </span>
                     </p>
                   </div>
@@ -471,13 +470,14 @@ function Landing() {
       </div>
     </section>
 
-    <section className="outer-section mt-4">
-      <div className="container" style={{ backgroundColor: '#FFEECD', borderRadius: '30px' }}>
+    <section className="container outer-section">
+      <div className="container" style={{ backgroundColor: '#FFEECD', borderRadius: '30px'}}>
         <section className="section compare">
           <div className="container">
             <h3 className="text-center pt-3 pb-3 border-left">
               <span>&nbsp; About Us</span>
             </h3>
+            <div className="inner-cont" style={{ backgroundColor: 'rgba(242, 141, 66, 0.4)', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px' }}></div>
             <div
               className="inner-cont"
               style={{ backgroundColor: 'rgba(242, 141, 66, 0.4)', padding: '40px', borderRadius: '30px' }}
@@ -858,7 +858,8 @@ function Landing() {
         </div>
       </div>
     </div>
-    <section className="outer-section footer-top aos">
+    <div className='desktop-view'>&nbsp;</div>
+    <section className="container outer-section footer-top aos">
       <div className="container" style={{ backgroundColor: '#008ED6', borderRadius: '30px' }}>
         <footer className="footer">
           <div className="row">

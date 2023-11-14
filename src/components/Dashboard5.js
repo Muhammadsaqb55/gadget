@@ -4,7 +4,7 @@ import React from 'react';
 
 function Dashboard5() {
     return (       
-        <div className="main-wrapper">
+        <div className="container main-wrapper">
       <div className="content-o">
         <div className="container">
           <div className="dashboard-header text-center">
@@ -26,32 +26,37 @@ function Dashboard5() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-1"></div>
-              <div className="col-md-4 banner-content-o mt-2 desktop-view">
-                  <div className="search-right">
-                    <form className="form" name="store" id="store" method="post" action="#">
-                      <div className="form-inner">
-                        <div className="input-group">
-                          <input type="email" className="form-controls" placeholder="" />
-                          <button className="btn btn-primary sub-btn" type="submit">Search &nbsp; &nbsp; &nbsp;<span><img src="assets/images/search.png" alt="" /></span></button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+              <div className="col-md-2"></div>
 
-                <div className="col-md-4 banner-content-m mt-2 mobile-view">
-                  <div className="search-right">
-                    <form className="form" name="store" id="store" method="post" action="#">
-                      <div className="form-inner">
-                        <div className="input-group">
-                          <input type="email" className="form-controls" placeholder="" />
-                          <button className="btn btn-primary sub-btn" type="submit">Search &nbsp; &nbsp; &nbsp;<span><img src="assets/images/search.png" alt="" /></span></button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+<div className="col-md-3 mt-2 desktop-view">
+<div className="search-right banner-content-o">
+        <form className="form" name="store" id="store" method="post" action="#">
+          <div className="form-inner">
+            <div className="input-group">
+              <input type="email" className="form-controls" placeholder="Browse Other Devices" />
+              <button className="btn btn-primary sub-btn" type="submit">
+              &nbsp;Search &nbsp; <span><img src="assets/images/search.png" alt="" /></span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+</div>
+
+<div className="col-md-3 mt-2 mobile-view">
+<div className="search-right banner-content-m">
+        <form className="form" name="store" id="store" method="post" action="#">
+          <div className="form-inner">
+            <div className="input-group">
+              <input type="email" className="form-controls-mobile" placeholder="Browse Other Devices" />
+              <button className="btn btn-primary sub-btn" type="submit">
+              &nbsp;Search &nbsp; &nbsp;<span><img src="assets/images/search.png" alt="" /></span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+</div>
             </div>
           </div>
           <div className="col-md-12">
@@ -61,6 +66,7 @@ function Dashboard5() {
                   <button style={{ border: '0px', backgroundColor: '#FFEECD', color: '#000', borderRadius: '20px', padding: '7px 30px 7px 10px' }}>
                     <i className="fa fa-calendar"></i> Start Date
                   </button>
+                  &nbsp;
                   <button style={{ border: '0px', backgroundColor: '#FFEECD', color: '#000', borderRadius: '20px', padding: '7px 30px 7px 10px' }}>
                     <i className="fa fa-calendar"></i> End Date
                   </button>

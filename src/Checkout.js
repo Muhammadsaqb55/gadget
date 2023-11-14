@@ -100,7 +100,7 @@ function  Checkout() {
         <div className="col-md-12">
           <h3><b>Enter your details to sell your device!</b></h3>
           <div className="row">
-            <div className="col-md-8 mt-4">
+            <div className="col-md-9 mt-4">
               <div
                 className="inner-b1"
                 style={{
@@ -369,16 +369,20 @@ function  Checkout() {
                           <b><h4>I accept the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></h4></b>
                         </label>
                       </div>
+                      <p className="">
+                        You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its   <a href="" style={{textDecoration: 'underline'}}>Privacy Policy</a>.
+                      </p>
+
                     </form>
                   </div>
                   <div className="col-md-4 mobile-view">
                     <div className="btn-box text-center">
-                      <button className="btn btn-primary text-dark" type="submit" style={{ borderRadius: '5px', fontWeight: 'bold', padding: '5px 30px' }}>Create an account</button>
+                      <button className="btn btn-primary text-dark" type="submit" style={{ borderRadius: '5px', fontWeight: 'bold', padding: '5px 20px' }}>Complete Your Order</button>
                     </div>
                   </div>
-                  <div className="col-md-4 desktop-view">
-                    <div className="btn-box text-center" style={{ position: 'relative', top: '30px' }}>
-                      <button className="btn btn-primary text-dark" type="submit" style={{ borderRadius: '5px', fontWeight: 'bold', padding: '5px 30px' }}>Create an account</button>
+                  <div className="col-md-12 desktop-view">
+                    <div className="btn-box text-end" style={{paddingRight:'50px'}}>
+                      <button className="btn btn-primary text-dark" type="submit" style={{ borderRadius: '5px', fontWeight: 'bold', padding: '5px 20px' }}>Complete Your Order</button>
                     </div>
                   </div>
                 </div>
@@ -386,7 +390,7 @@ function  Checkout() {
             </div>
 
 
-            <div className="col-md-4 mt-4" style={{ textAlign: 'center' }}>
+            <div className="col-md-3 mt-4" style={{ textAlign: 'center'}}>
       <div
         className="inner-top"
         style={{
@@ -395,6 +399,7 @@ function  Checkout() {
           paddingLeft: '10px',
           paddingRight: '10px',
           borderRadius: '20px',
+          paddingTop: '35px'
         }}
       >
         <div className="row">
@@ -403,10 +408,11 @@ function  Checkout() {
               <b>Apple iPhone 14 Pro Max</b>
             </div>
             <div
-              className="inner-image m-4"
+              className="inner-image "
               style={{
                 background: 'rgba(0, 142, 214, 0.7)',
                 textAlign: 'center',
+                borderRadius: '10px',
               }}
             >
               <img src={iphoneImage} alt="iPhone" />
@@ -486,41 +492,45 @@ function  Checkout() {
         }}
       >
         {/* The following sections with images can be mapped dynamically */}
-        <div className="inner-div-right">
+        <div className="inner-div-right" style={{borderBottom: '6px solid rgba(255, 176, 95, 1)'}}>
           <img src="assets/images/secured.png" alt="Secured" />
           <p className="mt-3">
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
+          <br/>
         </div>
 
-        <div className="inner-div-right">
+        <div className="inner-div-right" style={{borderBottom: '6px solid rgba(110, 206, 255, 1)'}}>
           <img src="assets/images/price.png" alt="Secured" />
           <p className="mt-3">
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
+          <br/>
         </div>
 
-
-        <div className="inner-div-right">
+        <div className="inner-div-right" style={{borderBottom: '6px solid rgba(255, 176, 95, 1)'}}>
           <img src="assets/images/return-fee.png" alt="Secured" />
           <p className="mt-3">
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
+          <br/>
         </div>
 
 
-        <div className="inner-div-right">
+        <div className="inner-div-right" style={{borderBottom: '6px solid rgba(110, 206, 255, 1)'}}>
           <img src="assets/images/obligation.png" alt="Secured" />
           <p className="mt-3">
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
+          <br/>
         </div>
 
-        <div className="inner-div-right">
+        <div className="inner-div-right" style={{borderBottom: '6px solid rgba(255, 176, 95, 1)'}}>
           <img src="assets/images/trusted.png" alt="Secured" />
           <p className="mt-3">
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
+          <br/>
         </div>
 
         <div className="inner-div-right">
@@ -528,6 +538,7 @@ function  Checkout() {
           <p className="mt-3">
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
+          <br/>
         </div>
         
 
@@ -535,58 +546,12 @@ function  Checkout() {
       </div>
     </div>
 
-
-
-
-
-            <div>&nbsp;</div>
-            <div
-              className="inner-b1"
-              style={{
-                backgroundColor: '#FFEECD',
-                paddingLeft: '50px',
-                paddingRight: '50px',
-                borderRadius: '20px',
-                padding: '10px 20px 20px 20px',
-                alignContent: 'middle',
-              }}
-            >
-              <div className="row">
-                <div className="col"><h2><b>We’re almost done!</b></h2></div>
-                <div className="col">
-                  <div className="chevron" style={{ textAlign: 'right' }}>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-8">
-                  <form action="#">
-                    <div className="form-group">
-                      <label className=""><b>Referrel Code</b></label>
-                      <input type="text" className="form-control floating" placeholder="e.g 123456" />
-                    </div>
-                  </form>
-                  <div className="col-md-12 mobile-view">
-                  <div className="btn-box text-center">
-                    <button className="btn btn-primary text-dark" type="submit" style={{ borderRadius: '5px', fontWeight: 'bold', padding: '5px 30px' }}>Create an account</button>
-                  </div>
-                  </div>
-                </div>
-                <div className="col-md-4 desktop-view">
-                  <div className="btn-box text-center" style={{ position: 'relative', top: '30px' }}>
-                    <button className="btn btn-primary text-dark" type="submit" style={{ borderRadius: '5px', fontWeight: 'bold', padding: '5px 30px' }}>Create an account</button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-        <div>&nbsp;</div>
       </div>
     </section>
-
-    <section className="outer-section footer-top aos">
+<div className='desktop-view'>&nbsp;</div>
+    <section className="container outer-section footer-top aos">
       <div className="container" style={{ backgroundColor: '#008ED6', borderRadius: '30px' }}>
         <footer className="footer">
           <div className="row">

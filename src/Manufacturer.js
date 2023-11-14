@@ -335,7 +335,7 @@ function Manufacturer() {
                 <p className="inner_p">
                   <span>
                     <a href="">
-                      <button className="spec-btn">View</button>
+                      <button className="spec-btn-tabs">View</button>
                     </a>
                   </span>
                 </p>
@@ -406,10 +406,8 @@ function Manufacturer() {
         </div>
       </div>
     </div>
-
-
-
-    <section className="outer-section footer-top aos">
+    <div className='desktop-view'>&nbsp;</div>
+    <section className="container outer-section footer-top aos">
       <div className="container" style={{ backgroundColor: '#008ED6', borderRadius: '30px' }}>
         <footer className="footer">
           <div className="row">
