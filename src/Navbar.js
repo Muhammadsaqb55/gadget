@@ -40,8 +40,9 @@ function Navbar() {
                 to="/"
                 style={{
                   textDecoration: 'none',
-                  color: location.pathname === '/' ? '#007bff' : '#333',
-                  fontWeight: location.pathname === '/' ? 'bold' : 'normal',
+                  color: location.pathname === '/' ? '#F96B07' : '#212529',
+                  borderBottom: location.pathname === '/' ? '3px solid' : '#F96B07',
+                  fontWeight: location.pathname === '/' ? 'bold' : '645',
                 }}
               >
                 Home
@@ -51,10 +52,12 @@ function Navbar() {
             <li>
               <Link
                 to="/manufacturer"
+               
                 style={{
                   textDecoration: 'none',
-                  color: location.pathname === '/manufacturer' ? '#007bff' : '#333',
-                  fontWeight: location.pathname === '/manufacturer' ? 'bold' : 'normal',
+                  color: location.pathname === '/manufacturer' ? '#F96B07' : '#212529',
+                  borderBottom: location.pathname === '/manufacturer' ? '3px solid' : '#F96B07',
+                  fontWeight: location.pathname === '/manufacturer' ? 'bold' : '645',
                 }}
               >
                 Best Price Guarantee
@@ -63,7 +66,12 @@ function Navbar() {
 
 
               <li class="">
-                <a href="#">Support</a>
+                <a href="#" style={{
+                  textDecoration: 'none',
+                  color: '#212529',
+                  fontWeight : '645',
+                }}>Support</a>
+                
               </li>
 
 
@@ -72,8 +80,9 @@ function Navbar() {
                 to="/devices"
                 style={{
                   textDecoration: 'none',
-                  color: location.pathname === '/devices' ? '#007bff' : '#333',
-                  fontWeight: location.pathname === '/devices' ? 'bold' : 'normal',
+                  color: location.pathname === '/devices' ? '#F96B07' : '#212529',
+                  borderBottom: location.pathname === '/devices' ? '3px solid' : '#F96B07',
+                  fontWeight: location.pathname === '/devices' ? 'bold' : '645',
                 }}
               >
                 Sell my Device
@@ -86,27 +95,29 @@ function Navbar() {
                 to="/checkout"
                 style={{
                   textDecoration: 'none',
-                  color: location.pathname === '/checkout' ? '#007bff' : '#333',
-                  fontWeight: location.pathname === '/checkout' ? 'bold' : 'normal',
+                  color: location.pathname === '/checkout' ? '#F96B07' : '#212529',
+                  borderBottom: location.pathname === '/checkout' ? '3px solid' : '#F96B07',
+                  fontWeight: location.pathname === '/checkout' ? 'bold' : '645',
                 }}
               >
                 Checkout
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link
                 to="/login"
                 style={{
                   textDecoration: 'none',
-                  color: location.pathname === '/login' ? '#007bff' : '#333',
-                  fontWeight: location.pathname === '/login' ? 'bold' : 'normal',
+                  color: location.pathname === '/login' ? '#F96B07' : '#212529',
+                  borderBottom: location.pathname === '/login' ? '3px solid' : '#F96B07',
+                  fontWeight: location.pathname === '/login' ? 'bold' : '645',
                 }}
               >
                 Login
               </Link>
-            </li>
-         
+            </li> */}
+{/*          
           <li>
           <div className="dropdown" style={{marginTop: '30px'}}>
           <button className="gadget-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -123,8 +134,8 @@ function Navbar() {
           <li><a className="dropdown-item" href="/recycler">Recycler</a></li>
           </ul>
           </div>
-          </li>
-          <li><a href="#" ><button class="gadget-btn">View other Gadgets</button></a></li>
+          </li> */}
+          <li><a href="/login" ><button class="gadget-btn">View other Gadgets</button></a></li>
         </ul>
 
 

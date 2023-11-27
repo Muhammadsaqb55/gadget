@@ -226,16 +226,21 @@ input[type=password] {
 }
 .banner-content-o .form-inner .form-controls{
 	/* box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.25); */
-	border-color:0px;
-	border: 0px !important;
+    border-color: 0px;
+    border: 0px !important;
     color: #353535;
-    font-size: 15px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
     /* min-height: 26px !important; */
     /* padding: 6px 30px; */
-	padding: 6px 15px;
-	border-radius: 22px;
-	background: inherit;
-	outline: none;
+    /* padding: 6px 15px; */
+    border-radius: 22px;
+    background: inherit;
+    outline: none;
+
+
+
 
 }
 .banner-content-o .form-inner .form-controls-t{
@@ -280,18 +285,17 @@ input[type=password] {
     font-weight: 500;
 }
 .banner-content-o .sub-btn {
-    background: #008ED6;
+	background: #008ED6;
     border-radius: 50px !important;
     font-weight: bold;
     border: 1px solid #008ED6;
     /* height: 52px; */
     margin: 4px;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 18px;
-    padding: 6px 2px;
+    padding: 5px 5px;
     text-transform: capitalize;
     color: #fff;
-    min-width: 100px;
 }
 
 /* //mobile view */
@@ -1841,7 +1845,7 @@ label {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: space-between;
     position: relative;
-	padding: 0 30px;
+	padding: 0 40px;
 	margin-bottom: 0;
 	transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -2706,7 +2710,7 @@ html.menu-opened body header:before {
     padding-bottom: 20px;
 }
 p.inner_p{
-	font-size: 12px !important;
+	font-size: 15px !important;
 	color: #000 !important;
 }
 .color-box {
@@ -2808,12 +2812,12 @@ p.inner_p{
 }
 .spec-btn-tabs{
 	border: 0px solid rgba(249, 107, 7, 1);
-	padding: 5px 10px;
-	background-color: rgba(250, 205, 164, 1);
-	border-radius: 13px;
-	font-size: 11px;
-	font-weight: bold;
-	margin: 0px 3px;
+    padding: 4px 16px;
+    background-color: rgba(250, 205, 164, 1);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0px 3px;
 }
 .brand-item {
     position: relative;
@@ -2891,7 +2895,7 @@ p.inner_p{
     text-transform: capitalize;
     color: #5F5F5F;
 	margin-bottom: 0;
-	font-weight: 500;
+	font-weight: 510;
 }
 .work {
 	position: relative;
@@ -3970,7 +3974,7 @@ p.inner_p{
 	margin-bottom: 15px;
 }
 .brands-icon{
-	background-color: #008ED6;
+	background-color: rgba(0, 142, 214, 0.70);
 	height: 115px;
 }
 .brands-icon img{
@@ -7871,7 +7875,7 @@ label.file-upload.image-btn {
 	height: 20px;
 	width: 20px;
 	border: 1px solid #000;
-	background-color: #fff;
+	background-color: #E7E7E7;
 	border-radius: 3px;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -14318,7 +14322,7 @@ h2.footer-title:before {
 	margin-bottom: 0;
 }
 .footer .footer-menu ul li a {
-    color: #353535;
+    color: #646464;
     font-size: 14px;
 	font-weight: 500;
     position: relative;
@@ -17684,7 +17688,8 @@ button.scroll-top:focus{
 		position: relative;
 	}
 	.main-nav > li > a {
-		padding: 30px 0;
+		/* T */
+		padding-top: 20px;
 	}
 	.main-nav > li > a > i {
 		font-size: 10px;
@@ -20586,4 +20591,32 @@ button.scroll-top:focus{
 	height: 202px;
 	padding: 10px;
 
+}
+.what-coun-good-p{
+	color: var(--inactive-color, #A0A4A8);
+	font-family: Poppins;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 900;
+	text-align: left;
+	padding-left:22px !important;
+}
+
+/* boostrap custom css */
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url('../images/feArrowDown1.png');
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-item {
+    background-color: #fff;
+    border: none !important;
 }

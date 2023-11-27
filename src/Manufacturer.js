@@ -4,7 +4,7 @@ import './App.css';
 
 function Manufacturer() {
   return (
-    <div className="main-wrapper">
+    <div className="main-wrapper" style={{paddingLeft: '50px',paddingRight: '50px'}}>
       <section className="section home-banner row-middle">
         <div className="container">
           <div className="row align-items-center">
@@ -84,7 +84,7 @@ function Manufacturer() {
           <div
             className="inner-cont"
             style={{
-              backgroundColor: '#FFEECD',
+              backgroundColor: 'rgba(255, 238, 205, 0.50)',
               paddingLeft: '50px',
               paddingRight: '50px',
               borderRadius: '30px',
@@ -222,7 +222,7 @@ function Manufacturer() {
   <div
     className="inner-cont"
     style={{
-      backgroundColor: '#FFEECD',
+      backgroundColor: 'rgba(255, 238, 205, 0.50)',
       paddingLeft: '50px',
       paddingRight: '50px',
       borderRadius: '30px',
@@ -283,7 +283,7 @@ function Manufacturer() {
   <div
     className="inner-cont"
     style={{
-      backgroundColor: '#FFEECD',
+      backgroundColor: 'rgba(255, 238, 205, 0.50)',
       paddingLeft: '50px',
       paddingRight: '50px',
       borderRadius: '30px',
@@ -352,54 +352,106 @@ function Manufacturer() {
 
 <div className="section">
       <div className="container">
-        <div
-          className="inner-cont"
-          style={{
-            backgroundColor: '#FFEECD',
-            borderRadius: '30px',
-            paddingBottom: '50px',
-          }}
-        >
-          <h3 className="text-center pt-3 pb-3 border-left">
-            <span>&nbsp; Frequently Asked Questions</span>
-          </h3>
+        <div className="inner-cont" style={{ backgroundColor: 'rgba(255, 238, 205, 0.50)', borderRadius: '30px', paddingBottom: '50px' }}>
+          <h3 className="text-center pt-3 pb-3 border-left"><span>&nbsp; Frequently Asked Questions</span></h3>
           <div className="col-xl-12 col-md-12 mx-auto">
             <div className="row mx-auto">
-              <div className="accordion" id="accordionExample" style={{ backgroundColor: 'inherit !important' }}>
-                {Array(3)
-                  .fill()
-                  .map((_, index) => (
-                    <div key={index} className="accordion-item" style={{ backgroundColor: 'inherit !important' }}>
-                      <h2 className="accordion-header" id={`heading${index + 1}`} style={{ backgroundColor: 'inherit !important' }}>
-                        <button
-                          className={`accordion-button ${index === 0 ? '' : 'collapsed'}`}
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target={`#collapse${index + 1}`}
-                          aria-expanded={index === 0}
-                          aria-controls={`collapse${index + 1}`}
-                          style={{ backgroundColor: 'inherit !important', borderBottom: '3px solid ' + (index === 0 ? '#FFB05F' : '#6ECEFF') }}
-                        >
-                          Why XYZ.com to trade in my phone?
-                        </button>
-                      </h2>
-                      <div
-                        id={`collapse${index + 1}`}
-                        className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`}
-                        aria-labelledby={`heading${index + 1}`}
-                        data-bs-parent="#accordionExample"
-                        style={{ backgroundColor: 'inherit !important' }}
-                      >
-                        <div className="accordion-body" style={{ backgroundColor: 'inherit !important' }}>
-                          Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-                          interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
-                          conubia nostra, per inceptos himenaeos.
-                          ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                          per inceptos himenaeos.
-                        </div>
-                      </div>
+              <div className="accordion" id="accordionExample" style={{ backgroundColor: 'inherit' }}>
+                {/* Accordion Item 1 */}
+                <div className="accordion-item" style={{ backgroundColor: 'inherit' }}>
+                  <h2 className="accordion-header" id="headingOne" style={{ backgroundColor: 'inherit' }}>
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style={{ backgroundColor: 'inherit', borderBottom: '5px solid #6ECEFF' }}>
+                    Why XYZ.com to trade in my phone?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style={{ backgroundColor: 'inherit' }}>
+                    <div className="accordion-body" style={{ backgroundColor: 'inherit' }}>
+                      Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                      interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos.
+                      ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                      per inceptos himenaeos.
                     </div>
-                  ))}
+                  </div>
+                </div>
+
+
+                {/* Accordion Item 2 */}
+                <div className="accordion-item" style={{ backgroundColor: 'inherit' }}>
+                  <h2 className="accordion-header" id="headingTwo" style={{ backgroundColor: 'inherit' }}>
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={{ backgroundColor: 'inherit', borderBottom: '5px solid #6ECEFF' }}>
+                    Why XYZ.com to trade in my phone?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style={{ backgroundColor: 'inherit' }}>
+                    <div className="accordion-body" style={{ backgroundColor: 'inherit' }}>
+                      Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                      interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos.
+                      ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                      per inceptos himenaeos.
+                    </div>
+                  </div>
+                </div>
+
+                {/* Accordion Item 3 */}
+                <div className="accordion-item" style={{ backgroundColor: 'inherit' }}>
+                  <h2 className="accordion-header" id="headingThree" style={{ backgroundColor: 'inherit' }}>
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style={{ backgroundColor: 'inherit', borderBottom: '5px solid #FFB05F' }}>
+                    Why XYZ.com to trade in my phone?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                      Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                      interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos.
+                      ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                      per inceptos himenaeos.
+                    </div>
+                  </div>
+                </div>
+
+
+
+                  {/* Accordion Item 4 */}
+                  <div className="accordion-item" style={{ backgroundColor: 'inherit' }}>
+                  <h2 className="accordion-header" id="headingFourth" style={{ backgroundColor: 'inherit' }}>
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseTwo" style={{ backgroundColor: 'inherit', borderBottom: '5px solid #6ECEFF' }}>
+                  Why XYZ.com to trade in my phone?
+                  </button>
+                  </h2>
+                  <div id="collapseFourth" className="accordion-collapse collapse" aria-labelledby="headingFourth" data-bs-parent="#accordionExample" style={{ backgroundColor: 'inherit' }}>
+                  <div className="accordion-body" style={{ backgroundColor: 'inherit' }}>
+                  Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                  interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
+                  conubia nostra, per inceptos himenaeos.
+                  ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                  per inceptos himenaeos.
+                  </div>
+                  </div>
+                  </div>
+
+
+                {/* Accordion Item 3 */}
+                <div className="accordion-item" style={{ backgroundColor: 'inherit' }}>
+                <h2 className="accordion-header" id="headingFifth" style={{ backgroundColor: 'inherit' }}>
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseThree" style={{ backgroundColor: 'inherit', borderBottom: '5px solid #FFB05F' }}>
+                Why XYZ.com to trade in my phone?
+                </button>
+                </h2>
+                <div id="collapseFifth" className="accordion-collapse collapse" aria-labelledby="headingFifth" data-bs-parent="#accordionExample">
+                <div className="accordion-body">
+                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos.
+                ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per inceptos himenaeos.
+                </div>
+                </div>
+                </div>
+
+
               </div>
             </div>
           </div>
@@ -408,7 +460,7 @@ function Manufacturer() {
     </div>
     <div className='desktop-view'>&nbsp;</div>
     <section className="container outer-section footer-top aos">
-      <div className="container" style={{ backgroundColor: '#008ED6', borderRadius: '30px' }}>
+      <div className="container" style={{ backgroundColor: 'rgba(0, 142, 214, 0.62)', borderRadius: '30px' }}>
         <footer className="footer">
           <div className="row">
             <div className="col-xl-4 col-md-6">

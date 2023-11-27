@@ -7,13 +7,18 @@ function Landing() {
   const location = useLocation(); // Use useLocation to access the current location
 
   return (
-    <div class="main-wrapper">
+    <div class="main-wrapper" style={{paddingLeft: '50px',paddingRight: '50px'}}>
       <section className="section home-banner row-middle">
         <div className="container">
           <div className="row align-items-center">
 
           <div className="col-md-8 col-lg-7 desktop-view">
-          <div className="banner-content">
+          <div className="play-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="67" height="21" viewBox="0 0 67 21" fill="none">
+          <path d="M1 1L16.9272 17.4382L26.8278 5.48315L38.6656 17.4382L51.5795 5.48315L66 20" stroke="#F96B07" stroke-width="2.65476"/>
+          </svg>
+          </div>
+          <div className="banner-content" style={{marginTop:'10px'}}>
           <h1>Compare and get the best<br />prices for your mobile <span class="blue-text">devices</span></h1>
           <form className="form" name="store" id="store" method="post" action="#">
           <div className="form-inner">
@@ -33,9 +38,10 @@ function Landing() {
           </div>
 
           <div className="col-md-8 col-lg-7 mobile-view">
+            
           <div className="banner-content-m">
           <h1>Compare and get the best<br/>prices for your mobile <span class="blue-text">devices</span></h1>
-        <div className="search-right">
+           <div className="search-right">
             <form className="form" name="store" id="store" method="post" action="#">
             <div class="form-inner">
             <div class="input-group">
@@ -71,7 +77,7 @@ function Landing() {
 
      <section className="section feature desktop-view">
         <div className="container">
-          <div className="inner-cont" style={{ backgroundColor: '#FFEECD', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px' }}>
+          <div className="inner-cont" style={{ backgroundColor: 'rgba(255, 238, 205, 0.50)', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px' }}>
             <h3 className="text-center pt-3 pb-3"><b>How Does It Work?</b></h3>
             <div className="col-xl-12 col-md-12 mx-auto" style={{ paddingBottom: '30px' }}>
               <div className="row mx-auto">
@@ -117,7 +123,7 @@ function Landing() {
       </section>
       <section className="section feature mobile-view">
         <div className="container">
-          <div className="inner-cont" style={{ backgroundColor: '#FFEECD', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px' }}>
+          <div className="inner-cont" style={{ backgroundColor: 'rgba(255, 238, 205, 0.50)', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px' }}>
             <h3 className="text-center pt-3 pb-3"><b>How Does It Work?</b></h3>
             <div className="col-xl-12 col-md-12 mx-auto">
               <div className="row mx-auto">
@@ -165,7 +171,7 @@ function Landing() {
 
       <section className="section compare">
       <div className="container">
-        <div className="inner-cont" style={{ backgroundColor: '#FFEECD', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px' }}>
+        <div className="inner-cont" style={{ backgroundColor: 'rgba(255, 238, 205, 0.50)', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px' }}>
           <h3 className="text-center pt-3 pb-3 border-left"><span> &nbsp; Top Most Compared Mobiles</span></h3>
           <div className="col-xl-12 col-md-12 mx-auto">
             <div className="row mx-auto">
@@ -174,11 +180,11 @@ function Landing() {
 
               <div className="col-xl-2 col-md-6 text-center mx-auto">
                 <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
                     <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
                   </div>
                   <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
                     <p className="inner_p">
                       <span>
                         <a href="#"><button className="spec-btn">64GB</button></a>
@@ -193,30 +199,11 @@ function Landing() {
 
               <div className="col-xl-2 col-md-6 text-center mx-auto">
                 <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
                     <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
                   </div>
                   <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
-                    <p className="inner_p">
-                      <span>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div className="col-xl-2 col-md-6 text-center mx-auto">
-                <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
-                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
-                  </div>
-                  <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
                     <p className="inner_p">
                       <span>
                         <a href="#"><button className="spec-btn">64GB</button></a>
@@ -232,11 +219,11 @@ function Landing() {
 
               <div className="col-xl-2 col-md-6 text-center mx-auto">
                 <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
                     <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
                   </div>
                   <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
                     <p className="inner_p">
                       <span>
                         <a href="#"><button className="spec-btn">64GB</button></a>
@@ -249,108 +236,15 @@ function Landing() {
               </div>
 
 
-              <div className="col-xl-2 col-md-6 text-center mx-auto">
-                <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
-                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
-                  </div>
-                  <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
-                    <p className="inner_p">
-                      <span>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
 
 
               <div className="col-xl-2 col-md-6 text-center mx-auto">
                 <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
                     <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
                   </div>
                   <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
-                    <p className="inner_p">
-                      <span>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div className="col-xl-2 col-md-6 text-center mx-auto">
-                <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
-                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
-                  </div>
-                  <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
-                    <p className="inner_p">
-                      <span>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div className="col-xl-2 col-md-6 text-center mx-auto">
-                <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
-                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
-                  </div>
-                  <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
-                    <p className="inner_p">
-                      <span>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div className="col-xl-2 col-md-6 text-center mx-auto">
-                <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
-                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
-                  </div>
-                  <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
-                    <p className="inner_p">
-                      <span>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                        <a href="#"><button className="spec-btn">64GB</button></a>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div className="col-xl-2 col-md-6 text-center mx-auto">
-                <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
-                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
-                  </div>
-                  <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
                     <p className="inner_p">
                       <span>
                         <a href="#"><button className="spec-btn">64GB</button></a>
@@ -366,11 +260,31 @@ function Landing() {
 
               <div className="col-xl-2 col-md-6 text-center mx-auto">
                 <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
                     <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
                   </div>
                   <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
                     <p className="inner_p">
                       <span>
                         <a href="#"><button className="spec-btn">64GB</button></a>
@@ -385,11 +299,11 @@ function Landing() {
 
               <div className="col-xl-2 col-md-6 text-center mx-auto">
                 <div className="compare-item freelance-count aos mx-auto">
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
                     <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
                   </div>
                   <div className="feature-content course-count">
-                    <h6 className="text-center"><b>Galaxy S22 Ultra</b></h6>
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
                     <p className="inner_p">
                       <span>
                         <a href="#"><button className="spec-btn">64GB</button></a>
@@ -400,7 +314,220 @@ function Landing() {
                   </div>
                 </div>
               </div>
+
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="col-xl-2 col-md-6 text-center mx-auto">
+                <div className="compare-item freelance-count aos mx-auto">
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
+                    <img src="/assets/images/iphone.png" className="img-fluid" alt="Mobile Icon" />
+                  </div>
+                  <div className="feature-content course-count">
+                    <h6 className="text-center"><b style={{fontSize:'10px'}}>Galaxy S22 Ultra</b></h6>
+                    <p className="inner_p">
+                      <span>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                        <a href="#"><button className="spec-btn">64GB</button></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
              
 
              
@@ -413,13 +540,13 @@ function Landing() {
 
     <section className="section compare">
       <div className="container">
-        <div className="inner-cont" style={{ backgroundColor: '#FFEECD', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px' }}>
+        <div className="inner-cont" style={{ backgroundColor: 'rgba(255, 238, 205, 0.50)', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px' }}>
           <h3 className="text-center pt-3 pb-3 border-left"><span> &nbsp; Compare Other Gadgets</span></h3>
           <div className="col-xl-12 col-md-12 mx-auto">
             <div className="row mx-auto">
               <div className="col-xl-3 col-md-6 text-center mx-auto">
                 <div className="compare-gadgets freelance-count aos mx-auto" style={{ border: '20px solid rgba(242, 141, 66, 0.4)' }}>
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
                     <img src="/assets/images/tablets.png" className="img-fluid" style={{ height: '180px' }} alt="Tablets" />
                   </div>
                   <div className="feature-content course-count">
@@ -435,7 +562,7 @@ function Landing() {
 
               <div className="col-xl-3 col-md-6 text-center mx-auto">
                 <div className="compare-gadgets freelance-count aos mx-auto" style={{ border: '20px solid rgba(66, 154, 242, 0.4)' }}>
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
                     <img src="/assets/images/watches.png" className="img-fluid" style={{ height: '180px' }} alt="Watches" />
                   </div>
                   <div className="feature-content course-count">
@@ -451,7 +578,7 @@ function Landing() {
 
               <div className="col-xl-3 col-md-6 text-center mx-auto">
                 <div className="compare-gadgets freelance-count aos mx-auto" style={{ border: '20px solid rgba(242, 141, 66, 0.4)' }}>
-                  <div className="feature-icon" style={{ backgroundColor: '#008ED6' }}>
+                  <div className="feature-icon" style={{ backgroundColor: 'rgba(0, 142, 214, 0.70)' }}>
                     <img src="/assets/images/gaming-consoles.png" className="img-fluid" style={{ height: '180px' }} alt="Gaming Consoles" />
                   </div>
                   <div className="feature-content course-count">
@@ -471,7 +598,7 @@ function Landing() {
     </section>
 
     <section className="container outer-section">
-      <div className="container" style={{ backgroundColor: '#FFEECD', borderRadius: '30px'}}>
+      <div className="container" style={{ backgroundColor: 'rgba(255, 238, 205, 0.50)', borderRadius: '30px'}}>
         <section className="section compare">
           <div className="container">
             <h3 className="text-center pt-3 pb-3 border-left">
@@ -555,7 +682,7 @@ function Landing() {
 <div>&nbsp;</div>
       <section className="section compare">
       <div className="container">
-        <div className="inner-cont" style={{ backgroundColor: '#FFEECD', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px' }}>
+        <div className="inner-cont" style={{ backgroundColor: 'rgba(255, 238, 205, 0.50)', paddingLeft: '50px', paddingRight: '50px', borderRadius: '30px' }}>
           <h3 className="text-center pt-3 pb-3 border-left"><span>&nbsp; Manufacturers</span></h3>
           <div className="col-xl-12 col-md-12 mx-auto">
             <div className="row mx-auto">
@@ -794,7 +921,7 @@ function Landing() {
     </section>
     <div className="section">
       <div className="container">
-        <div className="inner-cont" style={{ backgroundColor: '#FFEECD', borderRadius: '30px', paddingBottom: '50px' }}>
+        <div className="inner-cont" style={{ backgroundColor: 'rgba(255, 238, 205, 0.50)', borderRadius: '30px', paddingBottom: '50px' }}>
           <h3 className="text-center pt-3 pb-3 border-left"><span>&nbsp; Frequently Asked Questions</span></h3>
           <div className="col-xl-12 col-md-12 mx-auto">
             <div className="row mx-auto">
@@ -802,11 +929,11 @@ function Landing() {
                 {/* Accordion Item 1 */}
                 <div className="accordion-item" style={{ backgroundColor: 'inherit' }}>
                   <h2 className="accordion-header" id="headingOne" style={{ backgroundColor: 'inherit' }}>
-                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style={{ backgroundColor: 'inherit', borderBottom: '3px solid #FFB05F' }}>
-                      Accordion Item #1
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style={{ backgroundColor: 'inherit', borderBottom: '5px solid #6ECEFF' }}>
+                    Why XYZ.com to trade in my phone?
                     </button>
                   </h2>
-                  <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style={{ backgroundColor: 'inherit' }}>
+                  <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style={{ backgroundColor: 'inherit' }}>
                     <div className="accordion-body" style={{ backgroundColor: 'inherit' }}>
                       Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
                       interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
@@ -817,11 +944,12 @@ function Landing() {
                   </div>
                 </div>
 
+
                 {/* Accordion Item 2 */}
                 <div className="accordion-item" style={{ backgroundColor: 'inherit' }}>
                   <h2 className="accordion-header" id="headingTwo" style={{ backgroundColor: 'inherit' }}>
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={{ backgroundColor: 'inherit', borderBottom: '3px solid #6ECEFF' }}>
-                      Accordion Item #2
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={{ backgroundColor: 'inherit', borderBottom: '5px solid #6ECEFF' }}>
+                    Why XYZ.com to trade in my phone?
                     </button>
                   </h2>
                   <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style={{ backgroundColor: 'inherit' }}>
@@ -838,8 +966,8 @@ function Landing() {
                 {/* Accordion Item 3 */}
                 <div className="accordion-item" style={{ backgroundColor: 'inherit' }}>
                   <h2 className="accordion-header" id="headingThree" style={{ backgroundColor: 'inherit' }}>
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style={{ backgroundColor: 'inherit', borderBottom: '3px solid #FFB05F' }}>
-                      Accordion Item #3
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style={{ backgroundColor: 'inherit', borderBottom: '5px solid #FFB05F' }}>
+                    Why XYZ.com to trade in my phone?
                     </button>
                   </h2>
                   <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -852,6 +980,47 @@ function Landing() {
                     </div>
                   </div>
                 </div>
+
+
+
+                  {/* Accordion Item 4 */}
+                  <div className="accordion-item" style={{ backgroundColor: 'inherit' }}>
+                  <h2 className="accordion-header" id="headingFourth" style={{ backgroundColor: 'inherit' }}>
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseTwo" style={{ backgroundColor: 'inherit', borderBottom: '5px solid #6ECEFF' }}>
+                  Why XYZ.com to trade in my phone?
+                  </button>
+                  </h2>
+                  <div id="collapseFourth" className="accordion-collapse collapse" aria-labelledby="headingFourth" data-bs-parent="#accordionExample" style={{ backgroundColor: 'inherit' }}>
+                  <div className="accordion-body" style={{ backgroundColor: 'inherit' }}>
+                  Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                  interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
+                  conubia nostra, per inceptos himenaeos.
+                  ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                  per inceptos himenaeos.
+                  </div>
+                  </div>
+                  </div>
+
+
+                {/* Accordion Item 3 */}
+                <div className="accordion-item" style={{ backgroundColor: 'inherit' }}>
+                <h2 className="accordion-header" id="headingFifth" style={{ backgroundColor: 'inherit' }}>
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseThree" style={{ backgroundColor: 'inherit', borderBottom: '5px solid #FFB05F' }}>
+                Why XYZ.com to trade in my phone?
+                </button>
+                </h2>
+                <div id="collapseFifth" className="accordion-collapse collapse" aria-labelledby="headingFifth" data-bs-parent="#accordionExample">
+                <div className="accordion-body">
+                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos.
+                ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per inceptos himenaeos.
+                </div>
+                </div>
+                </div>
+
+
               </div>
             </div>
           </div>
@@ -860,7 +1029,7 @@ function Landing() {
     </div>
     <div className='desktop-view'>&nbsp;</div>
     <section className="container outer-section footer-top aos">
-      <div className="container" style={{ backgroundColor: '#008ED6', borderRadius: '30px' }}>
+      <div className="container" style={{ backgroundColor: 'rgba(0, 142, 214, 0.62)', borderRadius: '30px' }}>
         <footer className="footer">
           <div className="row">
             <div className="col-xl-4 col-md-6">

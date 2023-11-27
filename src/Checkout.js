@@ -7,7 +7,7 @@ import './App.css';
 
 function  Checkout() {
   return (
-    <div className="main-wrapper">
+    <div className="main-wrapper" style={{paddingLeft: '50px',paddingRight: '50px'}}>
 
     <section className="section home-banner row-middle">
      
@@ -16,7 +16,7 @@ function  Checkout() {
           <div
             className="inner-data"
             style={{
-              backgroundColor: '#FFEECD',
+              backgroundColor: 'rgba(255, 238, 205, 0.50)',
               paddingLeft: '50px',
               paddingRight: '50px',
               borderRadius: '10px',
@@ -28,21 +28,23 @@ function  Checkout() {
               <h3 className="pt-3"><b> &nbsp; &nbsp; &nbsp; &nbsp;LOCK-IN YOUR QUOTE</b></h3>
             </div>
             <div className="row">
-              <div className="col-md-3" style={{ padding: '10px' }}>
-                <div className="inner-image" style={{ background: 'rgba(0, 142, 214, 0.7)', textAlign: 'center' }}>
+              <div className="col-md-2" style={{ textAlign: 'right' }}>
+                <div className="inner-image" style={{ background: 'rgba(0, 142, 214, 0.7)' ,width: '150px'}}>
                   <img src="assets/images/iphone.png" alt="" />
                 </div>
               </div>
-              <div className="col-md-4" style={{ padding: '10px' }}>
-                <h6><b>Apple iPhone 14 Pro Max </b></h6>
+              <div className="col-md-4" style={{ padding: '10px',textAlign: 'left'}}>
+               <div style={{marginLeft: '20px' }}>
+                 <h6><b>Apple iPhone 14 Pro Max </b></h6>
                 <span><b  className="text-muted">Capacity : </b><b>64 GB</b></span><br/>
                 <span><b  className="text-muted">Network : </b><b>Unlocked</b></span><br/>
                 <span><b  className="text-muted">Condition : </b><b>Working</b></span><br/>
                 <span><b  className="text-muted">Your Offer : </b><b>$100</b></span>
+                </div>
               </div>
-              <div className="col-md-4" style={{ padding: '10px' }}>
+              <div className="col-md-6" style={{ padding: '10px',textAlign: 'right' }}>
                 <img src="assets/images/fone-bucks.png" alt="" />
-                <div className="rating-stars text-center">
+                <div className="rating-stars" style={{paddingRight: '70px'}}>
                   <span style={{ background: 'rgba(61, 205, 10, 1)', padding: '2px', color: 'rgba(255, 234, 127, 1)' }}><i className="fa fa-star"></i></span>
                   <span style={{ background: 'rgba(61, 205, 10, 1)', padding: '2px', color: 'rgba(255, 234, 127, 1)' }}><i className="fa fa-star"></i></span>
                   <span style={{ background: 'rgba(61, 205, 10, 1)', padding: '2px', color: 'rgba(255, 234, 127, 1)' }}><i className="fa fa-star"></i></span>
@@ -58,7 +60,7 @@ function  Checkout() {
           <div
             className="inner-data"
             style={{
-              backgroundColor: '#FFEECD',
+              backgroundColor: 'rgba(255, 238, 205, 0.50)',
               paddingLeft: '50px',
               paddingRight: '50px',
               borderRadius: '10px',
@@ -104,7 +106,7 @@ function  Checkout() {
               <div
                 className="inner-b1"
                 style={{
-                  backgroundColor: '#FFEECD',
+                  backgroundColor: 'rgba(255, 238, 205, 0.50)',
                   paddingLeft: '50px',
                   paddingRight: '50px',
                   borderRadius: '20px',
@@ -148,7 +150,7 @@ function  Checkout() {
               <div
                 className="inner-b1"
                 style={{
-                  backgroundColor: '#FFEECD',
+                  backgroundColor: 'rgba(255, 238, 205, 0.50)',
                   paddingLeft: '50px',
                   paddingRight: '50px',
                   borderRadius: '20px',
@@ -207,7 +209,7 @@ function  Checkout() {
               <div
                 className="inner-b1"
                 style={{
-                  backgroundColor: '#FFEECD',
+                  backgroundColor: 'rgba(255, 238, 205, 0.50)',
                   paddingLeft: '50px',
                   paddingRight: '50px',
                   borderRadius: '20px',
@@ -259,7 +261,7 @@ function  Checkout() {
               <div
                 className="inner-b1"
                 style={{
-                  backgroundColor: '#FFEECD',
+                  backgroundColor: 'rgba(255, 238, 205, 0.50)',
                   paddingLeft: '50px',
                   paddingRight: '50px',
                   borderRadius: '20px',
@@ -343,7 +345,7 @@ function  Checkout() {
               <div
                 className="inner-b1"
                 style={{
-                  backgroundColor: '#FFEECD',
+                  backgroundColor: 'rgba(255, 238, 205, 0.50)',
                   paddingLeft: '50px',
                   paddingRight: '50px',
                   borderRadius: '20px',
@@ -395,7 +397,7 @@ function  Checkout() {
         className="inner-top"
         style={{
           textAlign: 'center',
-          backgroundColor: '#FFEECD',
+          backgroundColor: 'rgba(255, 238, 205, 0.50)',
           paddingLeft: '10px',
           paddingRight: '10px',
           borderRadius: '20px',
@@ -404,7 +406,7 @@ function  Checkout() {
       >
         <div className="row">
           <div className="col-md-7">
-            <div className="mt-2">
+            <div className="mt-2" style={{ fontSize:'12px'}}>
               <b>Apple iPhone 14 Pro Max</b>
             </div>
             <div
@@ -431,6 +433,8 @@ function  Checkout() {
                   padding: '5px 40px',
                   border: '0px',
                   borderRadius: '15px',
+                  border: '1px solid #F96B07',
+                  background: 'rgba(0, 142, 214, 0.20)',
                 }}
               >
                 <option value=""></option>
@@ -450,6 +454,8 @@ function  Checkout() {
                   padding: '5px 40px',
                   border: '0px',
                   borderRadius: '15px',
+                  border: '1px solid #F96B07',
+                  background: 'rgba(0, 142, 214, 0.20)',
                 }}
               >
                 <option value=""></option>
@@ -469,6 +475,8 @@ function  Checkout() {
                   padding: '5px 40px',
                   border: '0px',
                   borderRadius: '15px',
+                  border: '1px solid #F96B07',
+                  background: 'rgba(0, 142, 214, 0.20)',
                 }}
               >
                 <option value=""></option>
@@ -485,7 +493,7 @@ function  Checkout() {
         className="innert"
         style={{
           textAlign: 'center',
-          backgroundColor: '#FFEECD',
+          backgroundColor: 'rgba(255, 238, 205, 0.50)',
           paddingLeft: '20px',
           paddingRight: '20px',
           borderRadius: '20px',
@@ -494,7 +502,7 @@ function  Checkout() {
         {/* The following sections with images can be mapped dynamically */}
         <div className="inner-div-right" style={{borderBottom: '6px solid rgba(255, 176, 95, 1)'}}>
           <img src="assets/images/secured.png" alt="Secured" />
-          <p className="mt-3">
+          <p className="mt-3" style={{textAlign:'left',fontWeight:'600'}}>
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
           <br/>
@@ -502,7 +510,7 @@ function  Checkout() {
 
         <div className="inner-div-right" style={{borderBottom: '6px solid rgba(110, 206, 255, 1)'}}>
           <img src="assets/images/price.png" alt="Secured" />
-          <p className="mt-3">
+          <p className="mt-3" style={{textAlign:'left',fontWeight:'600'}}>
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
           <br/>
@@ -510,7 +518,7 @@ function  Checkout() {
 
         <div className="inner-div-right" style={{borderBottom: '6px solid rgba(255, 176, 95, 1)'}}>
           <img src="assets/images/return-fee.png" alt="Secured" />
-          <p className="mt-3">
+          <p className="mt-3" style={{textAlign:'left',fontWeight:'600'}}>
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
           <br/>
@@ -519,7 +527,7 @@ function  Checkout() {
 
         <div className="inner-div-right" style={{borderBottom: '6px solid rgba(110, 206, 255, 1)'}}>
           <img src="assets/images/obligation.png" alt="Secured" />
-          <p className="mt-3">
+          <p className="mt-3" style={{textAlign:'left',fontWeight:'600'}}>
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
           <br/>
@@ -527,7 +535,7 @@ function  Checkout() {
 
         <div className="inner-div-right" style={{borderBottom: '6px solid rgba(255, 176, 95, 1)'}}>
           <img src="assets/images/trusted.png" alt="Secured" />
-          <p className="mt-3">
+          <p className="mt-3" style={{textAlign:'left',fontWeight:'600'}}>
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
           <br/>
@@ -535,7 +543,7 @@ function  Checkout() {
 
         <div className="inner-div-right">
           <img src="assets/images/fone-bucks.png" alt="Secured" />
-          <p className="mt-3">
+          <p className="mt-3" style={{textAlign:'left',fontWeight:'600'}}>
             You can unsubscribe at any time. SellMyMobile.com will process your data in accordance with its Privacy Policy.
           </p>
           <br/>
@@ -552,7 +560,7 @@ function  Checkout() {
     </section>
 <div className='desktop-view'>&nbsp;</div>
     <section className="container outer-section footer-top aos">
-      <div className="container" style={{ backgroundColor: '#008ED6', borderRadius: '30px' }}>
+      <div className="container" style={{ backgroundColor: 'rgba(0, 142, 214, 0.62)', borderRadius: '30px' }}>
         <footer className="footer">
           <div className="row">
             <div className="col-xl-4 col-md-6">
